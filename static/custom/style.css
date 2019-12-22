@@ -1,214 +1,369 @@
-/* Styles */
-
-@font-face{
-    font-family: 'Sniglet';
-    src: url('../fonts/Sniglet/Sniglet-Regular.ttf');
-}
 @font-face{
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
-html, body{
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-}
-body{
-    background-color: #ffe01b;
-}
-h1, h2, p{
-    font-family: Montserrat;
-    text-align: center;
-}
-hr{
-    border: 1px solid #212529;
+@font-face{
+    font-family: 'Sniglet';
+    src: url('../fonts/Sniglet/Sniglet-Regular.ttf');
 }
 
-/* Navbar */
-.navbar{
-    background-color: #007c89;
-}
-.navbar:hover{
-    background-color: #fff;
-    transition: ease-in-out .15s;
-}
-.navbar:hover .navbar-nav .nav-item .nav-link{
-    color: #212529;
-}
-.navbar-light .navbar-nav .nav-item .nav-link{
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-right: 2em;
-}
-.navbar-light .navbar-nav .nav-item .nav-link:hover{
-    color: #007c89;
-}
-.navbar .navbar-brand{
-    color: #212529;
+html, body{
+    margin: 0;
+    padding: 0;
     font-family: Sniglet;
+    scroll-behavior: smooth;
+}
+
+
+/* --------------- Header CSS --------------- */
+#header{
+    height: 100vh;
+}
+
+.diagonal-divide{
+    position: absolute;
+    left: 0%;
+    bottom: 17.5%;
+    transform: translate(-20%, -20%);
+    width: 100%;
+    transform: skewY(-3deg);
+    z-index: -1;
+    border-top: 2px solid #007c89;
+    border-bottom: 2px solid #007c89;
+    padding: 0.5rem;
+    font-size: 1.25em;
+    color: #000;
+    background-color: #ffe01b;
+}
+
+.user-box{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-box img{
+    border-radius: 50%;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 576px){
+    .user-box img{
+        width: 67.5%;
+    }
+}
+
+.user-box h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em;
+    color: #007c89;
+    transform: skewY(-3deg);
+}
+
+.scroll-btn{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #000;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+
+.scroll-bar span{ 
+    border: 2px solid #000;
+    font-size: 10px;
+    border-radius: 30px;
+}
+
+.scroll-bar {
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover{
+    0%{transform: translatey(0);}
+    100%{transform: translatey(10px);}
+}
+
+
+/* --------------- Information CSS --------------- */
+
+/* ---------------  Navbar --------------- */
+
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    box-shadow:0 6px 12px rgba(41,48,59,.175); 
+}
+
+.navbar-brand{
+    color: #000;
     font-size: 2.5rem;
     font-weight: bolder;
 }
-.navbar .navbar-brand:hover{
-    transform: rotate(5deg);
-    transition: ease-in-out .15s;
-}
-@media (max-width: 576px){
-    .navbar .navbar-brand{
-        color: #212529;
-        font-family: Sniglet;
-        font-size: 2rem;
-        font-weight: bolder;
-    }
+
+.navbar-brand:hover{
+    color: #000;
 }
 
-.masthead, .portfolio, .about, .contact{
-    padding-top: calc(2rem + 86px);
-    padding-bottom: 2rem;
+.nav-bar .fa-bars{
+    font-size: 25px;
+    color: #000;
 }
 
-/* Masthead */
-.masthead .masthead-avatar {
-    width: 12.5rem;
-    height: 12.5rem;
-}
-.masthead h1 {
-font-size: 2.75rem;
-line-height: 2.75rem;
-}
-.masthead p {
-    font-size: 1.15rem;
-}
-@media (min-width: 992px){
-    .masthead .row, .about .row, .contact .row{
-        padding: 5em;
-    }
-    .masthead h1 {
-        font-size: 3.2rem;
-        line-height: 3.5rem;
-    } 
-    .masthead p {
-        font-size: 1.25rem;
-    }
-}
-@media (max-width: 992px){
-    .masthead .row{
-        text-align: center;
-    }
+.navbar-toggler{
+    outline: none !important;
 }
 
-/* Portfolio */
-.portfolio .row{
-    background-color: #fff;
-}
-.portfolio .img-container{
-    height: 50vh;
-}
-.portfolio img:hover{
-    transform: scale(1.025);
-}
-.portfolio a{
-    text-decoration: none;
-    border-radius: 25px;
-    font-family: Montserrat;
+.nav-link{
+    color: #000;
+    font-family: Sniglet;
     font-weight: bold;
-}
-.portfolio .btn-warning{
-    color:#212529;
-    border: 2px solid #ffe01b;
-    background-color: #fff;
-    outline: none;
-}
-.portfolio .btn-warning:hover{
-    text-decoration: none;
-    color: #fff;
-    background-color: #ffe01b;
-    border: 2px solid #212529;
+    padding-right: 2em !important;
 }
 
-/* About */
-.about p{
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
-/* Contact */
-.contact p{
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-@media (min-width: 992px){
-    .contact p{
-        margin-top: 2em;
-    }
-}
-
-/* Copy Right */
-.copyright {
-    background-color: #007c89;
-    font-family: Montserrat;
-}
-
-/* Social Media Icons */
-.btn-social a{
-    border:2px solid #fff;
-    background-color: #007c89;
-    color: #fff;
-    border-radius: 100%;
-    display: inline-flex;
-    width: 3.25rem;
-    height: 3.25rem;
-    font-size: 1.25rem;
-    align-items: center;
-}
-.btn-social a:hover {
-    border:2px solid #007c89;
-    background-color: #fff;
+.nav-link:hover{
     color: #007c89;
 }
 
-/* Scroll to Top */
-.scroll-to-top {
-    z-index: 1042;
-    right: .5rem;
-    bottom: .25rem;
-    display: none;
-}
-.scroll-to-top a {
-    width: 3rem;
-    height: 3rem;
-    background-color: rgba(33, 37, 41, 0.5);
-    line-height: 2.5rem;
+@media (max-width: 992px){
+    hr{
+        border: 1px solid #000;
+    }
 }
 
-/* Icon Divider */
-.divider-custom {
-    margin: 1.25rem 0 1.5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* ---------------  Page Section --------------- */
+.page-section{
+    /* padding:8rem 0; */
+    padding:8rem 0 4rem;
+    color: #000;
 }
-.divider-custom .divider-custom-line {
-    width: 100%;
-    max-width: 7.5rem;
-    height: 0.25rem;
-    background-color: #212529;
-    border-radius: 1rem;
-    border-color: #212529;
+
+.about{
+    margin-bottom: -8rem;
 }
-.divider-custom .divider-custom-icon {
+
+.resume{
+    margin-top: -6rem;
+}
+
+.divider{
+    max-width: 7rem; 
+    background-color: #007c89;
+    border: 1px solid #007c89;
+}
+
+.projects, .about, .contact {
+    background-color: #ffe01b;
+}
+
+.projects h3, .skills h3, .resume h3, .about h3, .contact h3{
     font-size: 2rem;
 }
 
-/* Goto Portfolio Link */
-.goto a{
-    color: #007c89;
+.projects p, .about p{
+    font-size: 1.25rem;
+    font-weight: bold;
 }
-@media (min-width: 992px){
-    .goto{
-        margin: 2em;
+
+/* ---------------  Projects --------------- */
+.projects .row{
+    /* box-shadow: 0 0 10px 2px rgba(25, 5, 141, 0.5); */
+    background-color: #fff;
+}
+
+.projects .img-container{
+    height: 50vh;
+    background-color: #007c89;
+    border: 0.25rem solid #fff;
+}
+
+.projects img:hover{
+    transform: scale(1.025);
+}
+
+/* ---------------  Skills --------------- */
+/* .skills, .resume{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    transform: skewY(-5deg);
+}
+
+.skills .container, .resume .container{
+    transform: skewY(5deg);
+} */
+
+.skills .skills-box:hover{
+    box-shadow: 0 0 10px 2px rgba(0,0,0,.25);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: .25s;
+}
+
+.skills .skills-box img{
+    width: 75px; 
+    height: 75px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* ---------------  Resume --------------- */
+.timeline{
+    list-style-type: none;
+    position: relative;
+}
+
+.timeline::before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    z-index: 1;
+}
+
+.timeline li{
+    margin: 20px 0px 20px 20px;
+    background-color: #fff;
+}
+
+.timeline li h5, .skills h5{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0 5px 20px; 
+    font-size: 15px;
+}
+
+.timeline li h5 span{
+    font-weight: bold;
+    color: #ccc;
+}
+
+.timeline li p{
+    padding: 10px;
+}
+
+.timeline li::before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    background-color: #fff;
+    z-index: 1;
+}
+
+/* --------------- Contact --------------- */
+.contact .row{
+    padding: 30px 0;
+    font-size: 1.3rem;
+}
+
+.contact .row a{
+    color: #007c89;
+    text-decoration: none;
+}
+
+.contact .row a:hover{
+    color:#000;
+}
+
+.contact .col-lg-4 .fas, .contact .col-lg-4 .fab{
+    padding: 10px;
+    font-size: 3.5rem;
+}
+
+.contact .btn{
+    padding: 10px 25px;
+}
+
+.contact .btn i{
+    margin-right: 5px;
+}
+
+/* --------------- Footer --------------- */
+.footer p{
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+/* --------------- Social Icons --------------- */
+.social-icons{
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 80px; 
+}
+
+.social-icons ul{
+    padding: initial;           /* No space */
+}
+
+.social-icons ul li{
+    height: 35px;
+    width: 35px;
+    list-style-type: none;
+    padding-left: 10px;
+    padding-top: 7px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+.social-icons ul li:hover{
+    padding-left: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 80px;
+    transition: .75s;
+}
+
+/* --------------- Scroll to Top --------------- */
+@media (min-width: 576px){
+    .scroll-to-top {
+        z-index: 1042;
+        right: .5rem;
+        bottom: .25rem;
+        display: none;
     }
+    .scroll-to-top a {
+        width: 2.75rem;
+        height: 2.75rem;
+        background-color: rgba(33, 37, 41, 0.5);
+        line-height: 2.5rem;
+    }
+}
+
+/* --------------- Buttons --------------- */
+.btn-link{
+    border-radius: 25px;
+    color:#000;
+    font-weight: bold;
+    border: 2px solid #007c89;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #007c89;
+    border: 2px solid #000;
 }

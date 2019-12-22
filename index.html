@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>eu Portfolio</title>
+    <title>Portfolio Website</title>
 
-    <!-- Icon -->
-    <link rel="icon" href="static/img/icon/Machine Learning.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <!-- Font Awsome CSS-->
@@ -16,163 +14,275 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/custom/style.css">
 </head>
-
-<body id="page-top">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-        <div class="container">
+<body>
+    <div id="top"></div>
+    
+    <!-- --------------- Nav Bar --------------- -->
+    <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">Eyoab Tesfaye</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <hr>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="static/Resume/Eyoab Tesfaye CV.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Masthead -->
-    <div class="masthead container" id="masthead">
-        <div class="row">
-            <div class="col-lg-6 mb-5">
-                <img class="masthead-avatar mb-3 rounded-circle" src="static/img/profile/Local Host.png" alt="">
-                <div class="btn-social">
-                    <a class="btn btn-outline mx-1" href="https://github.com/Eyu-Tes" target="_blank">
-                        <i class="fab fa-fw fa-github"></i>
-                    </a>
-                    <a class="btn btn-outline mx-1" href="#" target="_blank">
-                        <i class="fab fa-fw fa-linkedin"></i>
-                    </a>
-                    <a class="btn btn-outline mx-1" href="https://www.youtube.com/channel/UC0QE_czJBiEDtPJEp9i6hwQ/featured?view_as=subscriber" target="_blank">
-                        <i class="fab fa-fw fa-youtube"></i>
-                    </a>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#">HOME</a>
+                    <a class="nav-item nav-link" href="#projects">PROJECTS</a>
+                    <a class="nav-item nav-link" href="#skills">SKILLS</a>
+                    <a class="nav-item nav-link" href="#about">ABOUT</a>
+                    <a class="nav-item nav-link" href="#resume">RESUME</a>
+                    <a class="nav-item nav-link" href="#contact">CONTACT</a>
                 </div>
             </div>
-            <div class="col-lg-6 my-auto">
-                <h1 class="text-center text-uppercase mb-0">Hi, I'm Eyoab!</h1>
-                <!-- Icon Divider -->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line mr-3"></div>
-                    <div class="divider-custom-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="divider-custom-line ml-3"></div>
-                </div>
-                <p class="text-center">Software Engineer - Student - Tutor</p>
-                <p class="goto">
-                    <a href="#portfolio">Checkout My Projects</a> <br><br>
-                    <a href="static/Resume/Eyoab Tesfaye CV.pdf" target="_blank">Checkout My Resume</a> <br>
-                </p>
-            </div>
-        </div>
+        </nav>
     </div>
     
-    <!-- Portfolio Section -->
-    <div class="portfolio px-2" id="portfolio">
-        <div><h1>Portfolio</h1></div>
-        <!-- Icon Divider -->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-        </div>
-        <div class="container">
-            <div class="row rounded my-3">
-                <div class="img-container col-md-6 p-4"> <img class="img-fluid rounded h-100 w-100" src="static/img/portfolios/Blog Post.PNG" alt=""> </div>
-                <div class="description col-md-6 px-3 py-4">
-                    <div class="d-flex flex-column justify-content-between h-100">
-                        <div class="text-center mb-5">
-                            <h2 class="mb-3">Flask Blog</h2>
-                            <p>A blog post that allows users to write posts and read posts by others.
-                                    A blog post that allows users to write posts and read posts by others.
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-around align-items-end">
-                            <a href="#" class="btn-warning px-5 py-2">Project</a>
-                            <a href="#" class="btn-warning px-5 py-2">Code</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- --------------- Header Section --------------- -->
+    <section id="header">
+        <div class="container text-center">
+            <div class="user-box">
+                <img src="static/img/profile/E.png">
+                <h1>Eyoab Tesfaye</h1>
             </div>
         </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="about container" id="about">
-        <div class="row">
-            <div class="col">
-                <h1>About</h1>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <div>
-                    <p>I am a software engineering student at Addis Ababa Science & Technology University.</p>
-                    <p>I mostly do Web Development projects, but also very much interested in Machine Learning and Mathematics.
-                    I give programming tutorials in my free time.</p>
-                    <p class="goto">
-                        <a href="#portfolio">Checkout My Projects</a> <br><br>
-                        <a href="static/Resume/Eyoab Tesfaye CV.pdf" target="_blank">Checkout My Resume</a> <br>
-                    </p>
-                </div>
+        <div class="diagonal-divide">
+            <div class="d-flex justify-content-around align-items-end">
+                <p class="px-3">Software Engineer</p>
+                <p class="px-3">Full Stack Developer</p>
+                <p class="px-3">Tutor</p>
             </div>
         </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section class="contact container-fluid" id="contact">
-        <div class="row">
-            <div class="col">
-                <h1>Contact</h1>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                </div>    
-                <div class="container-fuild">
-                    <div class="row text-center">
-                        <div class="col-12 col-lg-4 p-2">
-                            <i class="fas fa-envelope fa-4x mb-3"></i>
-                            <p><a style="color: #007c89" href="mailto:eutesfaye10@gmail.com" target="_blank">eutesfaye10@gmail.com</a></p>
-                        </div>
-                        <div class="col-12 col-lg-4 p-2">
-                            <i class="fas fa-phone fa-4x mb-3"></i>
-                            <p>+251932382766</p>
-                        </div>
-                        <div class="col-12 col-lg-4 p-2">
-                            <i class="fas fa-search-location fa-4x  mb-3"></i>
-                            <p>Addis Ababa, Ethiopia</p>
-                        </div>
-                    </div>
-                </div>
+        <a href="#projects" title='scroll down'>
+            <div class="scroll-btn">
+                <div class="scroll-bar"><span></span></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Copyright Section -->
-    <section class="copyright py-3 text-center text-white" id="copyright">
-        <div class="container">
-            Copyright &copy; <span id="printed-year"></span> <span class="mx-2">|</span> Eyoab Tesfaye </small>
-        </div>
-    </section>
-
-    <!-- Scroll to Top Button -->
-    <div class="scroll-to-top position-fixed" id="scroll-to-top">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
         </a>
-    </div>
+    </section>
+    
+    <!-- --------------- Information Section --------------- -->
+    <section id="info">
+        <!-- --------------- Projects --------------- -->
+        <div class="projects page-section" id="projects">
+            <div class="container">
+                <h3 class="text-center">Projects</h3>
+                <hr class="divider mt-4 mb-5">
+                <p style="font-size: 1.25rem; font-weight: bold;" class="text-center">Here are some of my web based projects</p>
+                <div class="row rounded my-5">
+                    <div class="img-container rounded-left col-md-6 p-4"> <img class="img-fluid rounded h-100 w-100" src="static/img/projects/Blog Post.PNG" alt=""> </div>
+                    <div class="description col-md-6 px-3 py-4">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="text-center mb-5">
+                                <h2 class="mb-3">Flask Blog</h2>
+                                <p>A blog post that allows users to write posts and read posts by others. 
+                                    Users can also update their account profiles.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-end">
+                                <a href="#" class="btn-link px-5 py-2">Project</a>
+                                <a href="https://github.com/Eyu-Tes/Flask-Blog" target="_blank" class="btn-link px-5 py-2">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row rounded my-5">
+                    <div class="img-container rounded-left col-md-6 p-4"> <img class="img-fluid rounded h-100 w-100" src="static/img/projects/Shopping List.PNG" alt=""> </div>
+                    <div class="description col-md-6 px-3 py-4">
+                        <div class="d-flex flex-column justify-content-between h-100">
+                            <div class="text-center mb-5">
+                                <h2 class="mb-3">Shopping List</h2>
+                                <p>A shopping list that allows users to manage their items during shopping. 
+                                    Users can add items to the list, cross-off items in the list, or remove items from the list.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-around align-items-end">
+                                <a href="#" class="btn-link px-5 py-2">Project</a>
+                                <a href="https://github.com/Eyu-Tes/Shopping-List" target="_blank" class="btn-link px-5 py-2">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------- Skills --------------- -->
+        <div class="skills page-section" id="skills">
+            <div class="container">
+                <h3 class="text-center">SKILLS</h3>
+                <hr class="divider mt-4 mb-5">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-5">
+                        <div class="skills-box">
+                            <h5>Front End Languages</h5>
+                            <div><img src="static/img/skills/html-5.svg"></div>
+                            <div><img src="static/img/skills/css-3.svg"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <div class="skills-box">
+                            <h5>Programming Languages</h5>
+                            <div><img src="static/img/skills/python-5.svg"></div>
+                            <div><img src="static/img/skills/javascript.svg"></div>
+                            <div><img src="static/img/skills/java.svg"></div>
+                            <div><img src="static/img/skills/c.svg"></div>
+                        </div>
+                    </div> 
+                    <div class="col-md-2 mb-5">
+                        <div class="skills-box">
+                            <h5>Frameworks</h5>
+                            <div><img src="static/img/skills/django.svg"></div>
+                            <div><img src="static/img/skills/flask.svg"></div>
+                            <div><img src="static/img/skills/vue-9.svg"></div>
+                            <div><img src="static/img/skills/bootstrap-4.svg"></div>
+                        </div>
+                    </div> 
+                    <div class="col-md-4 mb-5">
+                        <div class="skills-box">
+                            <h5>Technologies</h5>
+                            <div><img src="static/img/skills/tux.svg"></div>
+                            <div><img src="static/img/skills/git.svg"><img src="static/img/skills/github-1.svg"></div>
+                            <div>
+                                <img src="static/img/skills/mysql-5.svg">
+                                <img src="static/img/skills/postgresql.svg">
+                                <img src="static/img/skills/sqlite.svg">
+                                <img src="static/img/skills/microsoft-access-2013.svg">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------- About --------------- -->
+        <div class="about page-section" id="about">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col text-center">
+                        <h3>WHO AM I ?</h3>
+                        <hr class="divider mt-4 mb-5">
+                        <p>I am Eyoab Tesfaye. I am a software engineer and a full stack developer. I also give programming tutorials to others in my free time.
+                        I love to code, build products that solve users problems and challenge me. I am always motivated and dedicated to acquire new knowledge or skills faster.
+                        I am also passionate about Machine Learning, Data Science and Data Analytics. <br>
+                        You can reach out to me using the information in the contact section.
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-sm-4 my-3">
+                        <a href="#skills" class="btn-link px-5 py-2">&nbsp;&nbsp;Skills&nbsp;&nbsp;&nbsp;</a>
+                    </div>
+                    <div class="col-sm-4 my-3">
+                        <a href="#projects" class="btn-link px-5 py-2">Projects</a>
+                    </div>
+                    <div class="col-sm-4 my-3">
+                        <a href="#resume" class="btn-link px-5 py-2">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------- Social Icons --------------- -->
+        <div class="social-icons">
+            <ul>
+                <a href="https://github.com/Eyu-Tes" target="_blank"><li><i class="fab fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/eyoabtesfaye" target="_blank"><li><i class="fab fa-linkedin-in"></i></li></a>
+                <a href="https://www.youtube.com/channel/UC0QE_czJBiEDtPJEp9i6hwQ?view_as=subscriber" target="_blank"><li><i class="fab fa-youtube"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+            </ul>
+        </div>
+
+        <!-- --------------- Resume --------------- -->
+        <div class="resume page-section" id="resume">
+            <div class="container">
+                <h3 class="text-center">Resume</h3>
+                <hr class="divider mt-4 mb-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="text-center">My Experiences</h4>
+                        <ul class="timeline">
+                            <li>
+                                <h5><span>2019</span> - Tutor</h5>
+                                <p>Help students on the subjects: Programming, Maths and English <br><br>
+                                    <b>Company</b> - Haleta Tutors <br>
+                                    <b>Duration</b> - 1yr [2019 to Present] <br>
+                                    <b>Location</b> - Addis Ababa
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-center">My Education</h4>
+                        <ul class="timeline">
+                            <li>
+                                <h5><span>2020</span> - BSc. in Software Engineering</h5>
+                                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam exercitationem error culpa eius quos fuga mollitia consectetur illo laboriosam veritatis tempora aliquid sunt dolore, distinctio inventore recusandae quis, voluptate reiciendis? <br><br> -->
+                                <p></br> 
+                                    <b>Institute</b> - AddisAbaba Science & Technology University <br>
+                                    <b>Session</b> - 2016 to 2020 <br>
+                                    <b>Aggregate</b> - 3.9 / 4
+                                </p>
+                            </li>
+                            <!-- <li>
+                                <h5><span>2012</span> - Intermediate (HSC)</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam exercitationem error culpa eius quos fuga mollitia consectetur illo laboriosam veritatis tempora aliquid sunt dolore, distinctio inventore recusandae quis, voluptate reiciendis? <br><br>
+                                    <b>Institute</b> - AddisAbaba Science & Technology University <br>
+                                    <b>Session</b> - 2016 to 2020 <br>
+                                    <b>Aggregate</b> - 3.9
+                                </p>
+                            </li> -->
+                            <li>
+                                <h5><span>2016</span> - High School</h5>
+                                <p> <br>
+                                    <b>Institute</b> - School of Tomorrow <br>
+                                    <b>Session</b> - 2014 to 2016 <br>
+                                    <b>Aggregate</b> - 573 / 700
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------- Contact --------------- -->
+        <div class="contact page-section" id="contact">
+            <div class="container text-center">
+                <h3>Contact</h3>
+                <hr class="divider mt-4 mb-5">
+                <p style="font-size: 1.25rem; font-weight: bold;">Let's Get in Touch</p>
+                <div class="row mt-3">
+                    <div class="col-lg-4">
+                        <i class="fas fa-phone"></i>
+                        <p>+251 932382766</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:eutesfaye10@gmail.com" target="_blank">eutesfaye10@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i class="fas fa-search-location"></i>
+                        <p>Addis Ababa, Ethiopia</p>
+                    </div>
+                </div>
+                <a class="btn btn-link" title="download resume" href='./static/resume/Resume_EYOAB_TESFAYE.pdf' target="_blank">
+                    <i class="fas fa-download"></i>Resume
+                </a>
+            </div>
+        </div>
+
+        <div class="footer text-center">
+            <p>Copyright &copy; <span id="print-year"></span> <span class="mx-2">|</span> Eyoab Tesfaye </p>
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <div class="scroll-to-top position-fixed" id="scroll-to-top">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+
+    </section>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="static/jquery-3.4.1.slim.min.js"></script>

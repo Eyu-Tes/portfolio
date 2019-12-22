@@ -3,7 +3,8 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    // console.log(document.body);
+    if (document.body.scrollTop > 670 || document.documentElement.scrollTop > 670) {
         document.getElementById("scroll-to-top").style.display = "block";
     } else {
         document.getElementById("scroll-to-top").style.display = "none";
@@ -11,4 +12,6 @@ function scrollFunction() {
 }
 
 var currentYear = new Date().getFullYear();
-document.getElementById("printed-year").innerHTML = currentYear;
+spanElement = document.getElementById("print-year");
+yearNode = document.createTextNode(currentYear);
+spanElement.appendChild(yearNode);
